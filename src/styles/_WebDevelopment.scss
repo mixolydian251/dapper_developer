@@ -1,0 +1,105 @@
+@import "abstracts/mixins";
+
+.web{
+  grid-area: web;
+  backface-visibility: hidden;
+  background: linear-gradient(
+                  to top,
+                  rgba(255, 255, 255, 0.9),
+                  rgba(51, 0, 150, 0.81)),
+  url(../img/code.jpg) no-repeat fixed top;
+  background-size: auto;
+  clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100% );
+  padding-bottom: 20%;
+  z-index: 10;
+  &__heading{
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    text-align: right;
+    opacity: 0.4;
+    padding-left: 2rem;
+    padding-top: 35vh;
+    font-size: 8rem;
+    color: white;
+    padding-right: 2rem;
+  }
+  &__paragraph-box{
+    width: 100%;
+    @include flex-center(row, center);
+    padding: 2rem 0;
+  }
+  &__paragraph{
+    width: 500px;
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+  }
+
+  &__tech-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    padding: 0 3rem;
+    grid-gap: 3rem;
+  }
+
+  &__tech{
+    justify-self: center;
+    transition: all 150ms;
+    backface-visibility: hidden;
+    opacity: 0.5;
+    @include flex-center(column, center);
+    max-width: 270px;
+    filter: grayscale(100%) drop-shadow( 0 1rem 1.5rem rgba(0, 0, 0, 0.3));
+    -webkit-filter: grayscale(100%) drop-shadow( 0 1rem 1.5rem rgba(0, 0, 0, 0.3));
+    &--title{
+      font-size: 1.8em;
+      font-weight: 100;
+      color: white;
+    }
+    &--javascript{
+      padding-top: 5px;
+      width: 65%;
+    }
+    &--sass{
+      padding-top: 5px;
+      width: 65%;
+    }
+    &--react{
+      padding-top: 5px;
+      width: 65%;
+    }
+    &--redux{
+      padding-top: 5px;
+      width: 40%;
+    }
+    &--firebase{
+      padding-top: 5px;
+      width: 30%;
+    }
+    &--mongo{
+      width: 75%;
+    }
+    &--docker{
+      width: 45%;
+    }
+    &--node{
+      width: 50%;
+    }
+    &--express{
+      width: 65%;
+    }
+    &:hover{
+      filter: grayscale(0%) drop-shadow( 0 2rem 1.8rem rgba(0, 0, 0, 0.5));
+      -webkit-filter: grayscale(0%) drop-shadow( 0 2rem 1.8rem rgba(0, 0, 0, 0.5));
+      opacity: 1;
+      transform: translateY(-7px);
+    }
+  }
+}
+
+@media only screen and (max-width: 601px) {
+
+
+
+}

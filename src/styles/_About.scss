@@ -1,0 +1,40 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.about{
+  grid-area: background;
+  @include flex-center(column, space-evenly);
+  align-items: flex-start;
+  backface-visibility: hidden;
+
+  &__title--large{
+    background-image: linear-gradient(to right, rgb(0, 174, 255), $dark_blue);
+    width: 100%;
+    padding-left: 20%;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__heading{
+    padding-left: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 7rem;
+    opacity: 0.4;
+  }
+  &__paragraph{
+    font-size: 1.7rem;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+
+
+
+}

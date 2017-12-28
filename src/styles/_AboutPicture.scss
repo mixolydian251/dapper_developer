@@ -1,0 +1,27 @@
+@import "abstracts/mixins";
+
+.about__pictures{
+  grid-area: pictures;
+  @include flex-center(column, space-evenly);
+  position: relative;
+  z-index: 11;
+  &--me{
+    z-index: 1;
+    position:absolute;
+    right: 25%;
+    bottom: -40vh;
+    filter: drop-shadow( .5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow( .5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5));
+    //&:hover{
+    //  filter: drop-shadow( 1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
+    //  -webkit-filter: drop-shadow( 1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
+    //  transform: translateY(-15px);
+    //}
+  }
+}
+
+@media only screen and (max-width: 601px) {
+
+
+
+}

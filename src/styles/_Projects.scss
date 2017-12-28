@@ -1,0 +1,189 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+.projects{
+  margin-top:calc(-3.7rem - 25vh);
+  grid-area: projects;
+  height: 1050px;
+  z-index: 7;
+  background-image: linear-gradient(to bottom, #F44336, #f7f7f7);
+
+  &__heading{
+    font-family: 'Permanent Marker', cursive;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 20vh;
+    color: white;
+    font-size: 7rem;
+    opacity: 0.4;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+  }
+  &__cards{
+    padding: 0 4rem;
+    margin-top: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    grid-auto-rows: minmax(65vh, 400px);
+  }
+}
+
+.card{
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  height: 100%;
+  max-width: 350px;
+  min-width: 275px;
+
+  &__side{
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+
+    text-align: center;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 1rem 1.5rem 4rem rgba(black, 0.35);
+
+
+    &--front{
+      background-color: white;
+    }
+
+    &--back{
+      color: white;
+      font-size: 1.8rem;
+      padding: 1rem;
+      transform: rotateY(180deg);
+
+
+      &-1{
+        background-image: linear-gradient(to bottom right, $yellow, $orange);
+      }
+
+      &-2{
+        background-image: linear-gradient(to bottom right, $light_blue, $purple);
+      }
+
+      &-3{
+        background-image: linear-gradient(to bottom right, $light_green, $dark_green);
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform :rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform :rotateY(0);
+  }
+}
+
+.card__front--image{
+  position: relative;
+  background-blend-mode: screen;
+  height: 40%;
+  width: 100%;
+  background-size: contain;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100% );
+  &-trash{
+    background: linear-gradient(
+                    to bottom right,
+                    $yellow,
+                    $orange),
+    url(../img/trash_adventure.jpg) no-repeat center;
+  }
+  &-run{
+    background: linear-gradient(
+                    to bottom right,
+                    $light_blue,
+                    $dark_blue),
+    url(../img/run_app.jpg) no-repeat center;
+  }
+  &-brooks_website{
+    background: linear-gradient(
+                    to bottom right,
+                    $light_green,
+                    $dark_green),
+    url(../img/brooks_website.jpg) no-repeat center;
+  }
+  &-brooks_search{
+    background: linear-gradient(
+                    to bottom right,
+                    $light_green,
+                    $dark_green),
+    url(../img/brooks_sign_in.jpg) no-repeat center;
+  }
+  &-you_pick{
+    background: linear-gradient(
+                    to bottom right,
+                    $yellow,
+                    $orange),
+    url(../img/you_pick.jpg) no-repeat center;
+  }
+  &-expense{
+    background: linear-gradient(
+                    to bottom right,
+                    $light_blue,
+                    $dark_blue),
+    url(../img/expense_app.jpg) no-repeat center;
+  }
+}
+.card__front--title{
+  color: white;
+  position: absolute;
+  font-size: 2.8rem;
+  top: 25%;
+  right: 2rem;
+  text-align: right;
+  opacity: 0.85;
+  padding: 0.5rem 1rem;
+  box-decoration-break: clone;
+  &-1{
+    background-image: linear-gradient(to right, $yellow, $orange);
+  }
+
+  &-2{
+    background-image: linear-gradient(to right, $light_blue, $purple);
+  }
+
+  &-3{
+    background-image: linear-gradient(to right, $light_green, $dark_green);
+  }
+
+
+}
+.card__front--description{
+  margin-top: 20%;
+  padding: 1rem;
+
+}
+
+
+
+@media only screen and (max-width: 950px) {
+  .projects {
+    height: 1300px;
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 601px) {
+  .projects {
+    height: 2200px;
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
