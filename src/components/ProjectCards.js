@@ -7,7 +7,5 @@ const ProjectCards = () => {
           <Project/>
       </div>
   )
-
 };
-
 export default ProjectCards

@@ -14,14 +14,14 @@
     text-transform: uppercase;
     margin-top: 20vh;
     color: white;
-    font-size: 7rem;
+    font-size: 4rem;
     opacity: 0.4;
     margin-bottom: 2rem;
     padding-right: 2rem;
   }
   &__cards{
     padding: 0 4rem;
-    margin-top: 400px;
+    margin-top: 75rem;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,7 +41,7 @@
   &__side{
     height: 100%;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.6rem;
 
     text-align: center;
     transition: all 1s ease;
@@ -58,9 +58,11 @@
     }
 
     &--back{
+      position: relative;
       color: white;
-      font-size: 1.8rem;
-      padding: 1rem;
+      font-size: 1.7rem;
+      padding: 2rem;
+      text-align: left;
       transform: rotateY(180deg);
 
 
@@ -165,6 +167,21 @@
   margin-top: 20%;
   padding: 1rem;
 
+}
+
+.card__button{
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 5rem;
+  right: 0;
+  left: 0;
+  border-radius: 100px;
+  text-decoration: none;
 }
 
 

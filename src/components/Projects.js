@@ -13,10 +13,13 @@ const Projects = () => (
                     <div className="card__front--description"> An in browser game featuring my dog, Chase </div>
                 </div>
                 <div className="card__side card__side--back card__side--back-1">
-                    This game features my dog, Chase, who loves to go digging in our trash to find some tasty treats.
-                    Although, not every thing you find is a delicacy. Use the arrow keys to move (or tap the corresponding side on mobile).
-                    See how many goodies you can collect, while dodging the the bad stuff!
-                    <button className="btn-white">Demo</button>
+                    <p>
+                        This game features my dog, Chase, who loves to go digging in our trash to find some tasty treats.
+                        Although, not every thing you find is a delicacy. Use the arrow keys to move (or tap the corresponding side on mobile).
+                        See how many goodies you can collect, while dodging the the bad stuff!
+                    </p>
+
+                    <Link to="/" className="btn-white card__button">Demo</Link>
                 </div>
             </div>
 
@@ -35,7 +38,7 @@ const Projects = () => (
                         The run app will dynamically track your pace and distance traveled. Once you have finished,
                         upload your run to the cloud and compare your progress with previous runs.
                     </p>
-                    <Link to="/" className="btn btn-white">Demo</Link>
+                    <Link to="/" className="btn-white card__button">Demo</Link>
                 </div>
             </div>
 
@@ -55,7 +58,7 @@ const Projects = () => (
                         behind this project was to create a performance oriented website intended for mid-tier mobile use.
                         The site features dynamic hours of operation, as well as information on how to use the food bank.
                     </p>
-                    <Link to="/" className="btn btn-white">Demo</Link>
+                    <Link to="/" className="btn-white card__button">Demo</Link>
                 </div>
             </div>
 
@@ -88,12 +91,12 @@ const Projects = () => (
                 <div className="card__side card__side--front">
                     <div className="card__front--image card__front--image-expense"/>
                     <div className="card__front--title card__front--title-2">Expenses</div>
-                        <div className="card__front--description"> Track all of your expenses with the Expense app </div>
-                    </div>
-                    <div className="card__side card__side--back card__side--back-2">
-                        Details for expenses
-                    </div>
+                    <div className="card__front--description"> Track all of your expenses with the Expense app </div>
                 </div>
+                <div className="card__side card__side--back card__side--back-2">
+                        Details for expenses
+                </div>
+            </div>
 
             </div>
         </div>

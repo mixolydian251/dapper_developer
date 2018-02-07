@@ -7,8 +7,8 @@
                   to top,
                   rgba(255, 255, 255, 0.9),
                   rgba(51, 0, 150, 0.81)),
-  url(../img/code.jpg) no-repeat fixed top;
-  background-size: auto;
+  url(../img/code.jpg) no-repeat fixed center;
+  background-size: cover;
   clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100% );
   padding-bottom: 20%;
   z-index: 10;
@@ -19,7 +19,7 @@
     opacity: 0.4;
     padding-left: 2rem;
     padding-top: 35vh;
-    font-size: 8rem;
+    font-size: 4rem;
     color: white;
     padding-right: 2rem;
   }

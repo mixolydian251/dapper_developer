@@ -6,17 +6,18 @@
   position: relative;
   z-index: 11;
   &--me{
+    transition: all 150ms;
     z-index: 1;
     position:absolute;
     right: 25%;
-    bottom: -40vh;
+    bottom: -22rem;
     filter: drop-shadow( .5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5));
     -webkit-filter: drop-shadow( .5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5));
-    //&:hover{
-    //  filter: drop-shadow( 1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
-    //  -webkit-filter: drop-shadow( 1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
-    //  transform: translateY(-15px);
-    //}
+    &:hover{
+      filter: drop-shadow( 1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
+      -webkit-filter: drop-shadow( 1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
+      transform: translateY(-10px);
+    }
   }
 }
 

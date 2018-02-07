@@ -1,0 +1,11 @@
+*/node_modules*
+*/.idea*
+*.dockerignore
+*DockerFile
+*docker-compose.yaml
+*postcss.config.js
+*.webpack.config.js
+*yarn.lock
+*dapper_developer.iml
+
+

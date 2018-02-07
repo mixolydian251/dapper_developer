@@ -4,10 +4,9 @@
 .header{
   height: 125vh;
   background: linear-gradient(
-                  to bottom,
-                  //$light_blue,
+                  to bottom right,
                   $light_blue,
-                  rgba(255, 255, 255, 0.65)),
+                  rgba(255, 255, 255, 0.8)),
                   url(../img/hustle.jpg) no-repeat fixed center right;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25vh), 0 100% );
