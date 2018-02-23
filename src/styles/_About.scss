@@ -2,26 +2,16 @@
 @import "abstracts/mixins";
 
 .about{
+  width: 100%;
   grid-area: background;
   @include flex-center(column, space-evenly);
-  align-items: flex-start;
-  backface-visibility: hidden;
-  margin-top: 20rem;
+  //align-items: flex-start;
+  margin: 2rem 0;
 
-  &__title--large{
-    background-image: linear-gradient(to right, rgb(0, 174, 255), $dark_blue);
-    width: 100%;
-    padding-left: 20%;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 20px;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
 
   &__heading{
-    padding-left: 2rem;
+    padding-left: 4rem;
+    width: 100vw;
     font-family: 'Permanent Marker', cursive;
     text-align: left;
     text-transform: uppercase;
@@ -29,8 +19,9 @@
     opacity: 0.4;
   }
   &__paragraph{
+    width: 100vw;
     font-size: 1.7rem;
-    padding: 2rem;
+    padding: 4rem;
   }
 }
 

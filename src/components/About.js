@@ -2,8 +2,6 @@ import React from 'react';
 
 const About = () => (
     <div className="about">
-        <div className="blank_space"/>
-        <h2 className="about__title--large">Who is the dapper developer?</h2>
         <h3 className="about__heading">About Me</h3>
         <p className="about__paragraph">
             My name is Jordan Hensley. I am currently a freelance web developer and problem-solver in Raleigh, NC.

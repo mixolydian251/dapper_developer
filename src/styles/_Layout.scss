@@ -4,18 +4,18 @@
 
 .page__layout{
   display: grid;
-  grid-template-columns: 8fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-gap: 3em;
   grid-template-areas:
-          'background  pictures'
-          'web         web    '
-          'student     student'
-          'projects    projects';
+          'background'
+          'pictures'
+          'web'
+          'student'
+          'projects';
 }
 .page__container{
   background-color: #f9f9f9;
-  margin-top: -55vh;
+  //margin-top: -55vh;
   @include flex-center(column, flex-start);
 }
 

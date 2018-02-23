@@ -8,16 +8,16 @@ import AboutPicture from './AboutPicture';
 
 const LandingPage = () => (
   <div>
-      <Header/>
-      <div className="page__container">
-          <div className="page__layout">
-              <About/>
-              <WebDevelopment/>
-              <Education/>
-              <AboutPicture/>
-              <Projects/>
-          </div>
+    <Header/>
+      <div >
+        <div >
+          <About/>
+          <AboutPicture/>
+          <WebDevelopment/>
+          <Education/>
+          <Projects/>
       </div>
+    </div>
   </div>
 );
 

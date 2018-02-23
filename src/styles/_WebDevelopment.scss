@@ -1,6 +1,7 @@
 @import "abstracts/mixins";
 
 .web{
+  width: 100%;
   grid-area: web;
   backface-visibility: hidden;
   background: linear-gradient(
@@ -21,12 +22,12 @@
     padding-top: 35vh;
     font-size: 4rem;
     color: white;
-    padding-right: 2rem;
+    padding-right: 3rem;
   }
   &__paragraph-box{
     width: 100%;
     @include flex-center(row, center);
-    padding: 2rem 0;
+    padding: 2rem 3rem;
   }
   &__paragraph{
     width: 500px;
@@ -99,7 +100,48 @@
 }
 
 @media only screen and (max-width: 601px) {
+  .web{
+    &__tech-box{
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
 
+    &__tech {
 
-
+      &--javascript {
+        padding-top: 5px;
+        width: 80px;
+      }
+      &--sass {
+        padding-top: 5px;
+        width: 80px;
+      }
+      &--react {
+        padding-top: 5px;
+        width: 80px;
+      }
+      &--redux {
+        padding-top: 5px;
+        width: 80px;
+      }
+      &--firebase {
+        padding-top: 5px;
+        width: 70px;
+      }
+      &--mongo {
+        width: 140px;
+      }
+      &--docker {
+        width: 90px;
+      }
+      &--node {
+        width: 95px;
+      }
+      &--express {
+        width: 150px;
+        margin-left: 125%;
+        margin-top: -80px;
+      }
+    }
+  }
 }

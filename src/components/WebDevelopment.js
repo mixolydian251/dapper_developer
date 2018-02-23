@@ -12,7 +12,6 @@ const sass = require('../img/Sass_Logo.svg');
 
 const WebDevelopment = () => (
     <div id="web_background" className="web">
-        <div className="black_space"> </div>
         <h3 className="web__heading">Web Development</h3>
         <div className="web__paragraph-box">
             <p className="web__paragraph">
