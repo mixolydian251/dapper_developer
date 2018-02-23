@@ -5,6 +5,7 @@ import About from './About'
 import WebDevelopment from './WebDevelopment';
 import Education from './Education';
 import AboutPicture from './AboutPicture';
+import Contact from './Contact';
 
 const LandingPage = () => (
   <div>
@@ -16,6 +17,7 @@ const LandingPage = () => (
           <WebDevelopment/>
           <Education/>
           <Projects/>
+          <Contact/>
       </div>
     </div>
   </div>

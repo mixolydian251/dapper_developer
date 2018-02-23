@@ -8,7 +8,7 @@
   grid-area: projects;
   height: 160rem;
   z-index: 7;
-  background: linear-gradient(to bottom right, rgba(244, 46, 31, 0.71), rgba(247, 123, 126, 0.71)),
+  background: linear-gradient(to bottom right, rgba(255, 47, 31, 0.71), rgba(255, 214, 217, 0.71)),
   url(../img/texture.jpg) fixed;
   clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100% );
 
@@ -194,7 +194,7 @@
 
 @media only screen and (max-width: 950px) {
   .projects {
-    height: 1300px;
+    height: 1900px;
     &__cards {
       grid-template-columns: 1fr 1fr;
     }
@@ -204,7 +204,7 @@
 
 @media only screen and (max-width: 601px) {
   .projects {
-    height: 2400px;
+    height: 3000px;
     &__cards {
       grid-template-columns: 1fr;
     }
