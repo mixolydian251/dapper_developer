@@ -10,16 +10,12 @@ import Contact from './Contact';
 const LandingPage = () => (
   <div>
     <Header/>
-      <div >
-        <div >
-          <About/>
-          <AboutPicture/>
-          <WebDevelopment/>
-          <Education/>
-          <Projects/>
-          <Contact/>
-      </div>
-    </div>
+      <About/>
+      <AboutPicture/>
+      <WebDevelopment/>
+      <Education/>
+      <Projects/>
+      <Contact/>
   </div>
 );
 

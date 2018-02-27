@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <span className="header__title--main">Developer</span>
                         <span className="header__title--sub">where design meets performance</span>
                     </h1>
-                    <Link to="/" className="btn btn-white">Contact Me</Link>
+                    {/*<Link to="/" className="btn btn-white">Contact Me</Link>*/}
                 </div>
             </header>
         )

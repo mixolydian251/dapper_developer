@@ -4,7 +4,7 @@
   grid-area: student;
   @include flex-center(column, flex-start);
   position: relative;
-  height: 90rem;
+  height: 100rem;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
     url(../img/school.jpg) no-repeat left;
   background-size: cover;
@@ -114,8 +114,8 @@
   }
 
   .school{
+    min-width: 0;
     &__card{
-
       min-height: 0;
       height: 350px;
       width: 230px;

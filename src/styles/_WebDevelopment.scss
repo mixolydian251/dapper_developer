@@ -5,9 +5,10 @@
   grid-area: web;
   backface-visibility: hidden;
   background: linear-gradient(
-                  to top,
-                  rgba(255, 255, 255, 0.9),
-                  rgba(51, 0, 150, 0.81)),
+                  to bottom right,
+                  rgba(225, 245, 255, 0.7),
+                  rgba(0, 181, 255, 0.4),
+                  rgba(255, 134, 0, 0.76)),
   url(../img/code.jpg) no-repeat fixed center;
   background-size: cover;
   clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100% );

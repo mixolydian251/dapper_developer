@@ -8,8 +8,12 @@
   grid-area: projects;
   height: 140rem;
   z-index: 7;
-  background: linear-gradient(to bottom right, rgba(255, 47, 31, 0.71), rgba(255, 214, 217, 0.71)),
-  url(../img/texture.jpg) fixed;
+  background: linear-gradient(
+                  to top left,
+                  rgba(225, 245, 255, 0.7),
+                  rgba(0, 181, 255, 0.4),
+                  rgba(255, 134, 0, 0.76)),
+  url(../img/paper.jpg);
   clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100% );
 
   &__heading{
@@ -194,7 +198,7 @@
 
 @media only screen and (max-width: 950px) {
   .projects {
-    height: 1900px;
+    height: 1800px;
     &__cards {
       grid-template-columns: 1fr 1fr;
     }
@@ -204,7 +208,7 @@
 
 @media only screen and (max-width: 601px) {
   .projects {
-    height: 3000px;
+    height: 3100px;
     &__cards {
       grid-template-columns: 1fr;
     }
