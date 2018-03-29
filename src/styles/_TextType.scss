@@ -1,0 +1,45 @@
+.textType{
+  background: transparent;
+  color: white;
+  width: fit-content;
+  display: block;
+  font-size: 40px;
+  margin: 9rem auto 0 auto;
+
+  padding-left: 3rem;
+  text-align: center;
+  text-transform: none;
+  font-weight: 100;
+  font-family: Avenir, sans-serif;
+
+  &__cursor{
+    width: fit-content;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    animation: cursorBlink 1s infinite;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .textType{
+    font-size: 20px;
+    &__cursor{
+      font-size: 25px;
+    }
+  }
+}
+
+@keyframes cursorBlink {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

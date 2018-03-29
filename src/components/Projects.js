@@ -18,30 +18,27 @@ const Projects = () => (
                         Although, not every thing you find is a delicacy. Use the arrow keys to move (or tap the corresponding side on mobile).
                         See how many goodies you can collect, while dodging the the bad stuff!
                     </p>
-
-                    <Link to="/" className="btn-white card__button">Demo</Link>
+                    <Link to="http://thedapperdeveloper.com:3000" target="_blank" className="btn-white card__button">Demo</Link>
                 </div>
             </div>
-
 
 
 
             <div className="card">
-                <div className="card__side card__side--front">
-                    <div className="card__front--image card__front--image-run"/>
-                    <div className="card__front--title card__front--title-2">Run App</div>
-                    <div className="card__front--description"> Track your run progress to see if you are improving</div>
-                </div>
-                <div className="card__side card__side--back card__side--back-2">
-                    <p>
-                        This application was designed for use on a treadmill. Simply tap the timer, then set your run speed.
-                        The run app will dynamically track your pace and distance traveled. Once you have finished,
-                        upload your run to the cloud and compare your progress with previous runs.
-                    </p>
-                    <Link to="/" className="btn-white card__button">Demo</Link>
-                </div>
+              <div className="card__side card__side--front">
+                <div className="card__front--image card__front--image-harmony"/>
+                <div className="card__front--title card__front--title-2">Harmo-Knowledge</div>
+                <div className="card__front--description"> An app to help you learn some basic music theory </div>
+              </div>
+              <div className="card__side card__side--back card__side--back-2">
+                <p>
+                  Harmo-Knowledge is an app to help you learn the notes behind musical harmony.
+                  Select from 2 modes, chords and notes. Then enter a guess and check your answer.
+                  From the menu, you can target specific chords. You'll be a maestro in no time!
+                </p>
+                <Link to="http://thedapperdeveloper.com:3001" target="_blank" className="btn-white card__button">Demo</Link>
+              </div>
             </div>
-
 
 
 
@@ -58,10 +55,9 @@ const Projects = () => (
                         behind this project was to create a performance oriented website intended for mid-tier mobile use.
                         The site features dynamic hours of operation, as well as information on how to use the food bank.
                     </p>
-                    <Link to="/" className="btn-white card__button">Demo</Link>
+                    <a href="http://brooksavenuechurch.com" target="_blank" className="btn-white card__button">Demo</a>
                 </div>
             </div>
-
 
 
             <div className="card">
@@ -72,30 +68,44 @@ const Projects = () => (
                                                                Clothing Closet </div>
                 </div>
                 <div className="card__side card__side--back card__side--back-3">
-                    Details for Brooks Search
+                  <p>
+                    This application was built to replace the pen and paper sign-in method at my local clothing closet.
+                    The site features a React/Redux centered interface along with a firebase db.
+                    Users can track how many times customers have visited the clothing closet,
+                    as well as keep track of how many limited items they take.
+                  </p>
+                  <Link to="http://thedapperdeveloper.com:3002" target="_blank" className="btn-white card__button">Demo</Link>
                 </div>
             </div>
 
             <div className="card">
                 <div className="card__side card__side--front">
                     <div className="card__front--image card__front--image-you_pick"/>
-                    <div className="card__front--title card__front--title-1">You Pick</div>
-                    <div className="card__front--description"> A simple app to help you decide where you should eat </div>
+                    <div className="card__front--title card__front--title-1">Charles Keith</div>
+                    <div className="card__front--description"> A personal website for Raleigh based author and playwright, Charles Keith </div>
                 </div>
                 <div className="card__side card__side--back card__side--back-1">
-                    Details for You Pick
+                  <p>
+                    This website features and hand built Content Management System</p>
+                  <Link to="http://thedapperdeveloper.com:3004" target="_blank" className="btn-white card__button">Demo</Link>
                 </div>
             </div>
 
+
             <div className="card">
-                <div className="card__side card__side--front">
-                    <div className="card__front--image card__front--image-expense"/>
-                    <div className="card__front--title card__front--title-2">Expenses</div>
-                    <div className="card__front--description"> Track all of your expenses with the Expense app </div>
-                </div>
-                <div className="card__side card__side--back card__side--back-2">
-                        Details for expenses
-                </div>
+              <div className="card__side card__side--front">
+                <div className="card__front--image card__front--image-run"/>
+                <div className="card__front--title card__front--title-2">Run App</div>
+                <div className="card__front--description"> Track your run progress to see if you are improving</div>
+              </div>
+              <div className="card__side card__side--back card__side--back-2">
+                <p>
+                  This application was designed for use on a treadmill. Simply tap the timer, then set your run speed.
+                  The run app will dynamically track your pace and distance traveled. Once you have finished,
+                  upload your run to the cloud and compare your progress with previous runs.
+                </p>
+                <Link to="http://thedapperdeveloper.com:3005" target="_blank" className="btn-white card__button">Demo</Link>
+              </div>
             </div>
 
             </div>
@@ -104,3 +114,4 @@ const Projects = () => (
 );
 
 export default Projects;
+

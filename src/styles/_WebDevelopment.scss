@@ -9,16 +9,17 @@
                   rgba(225, 245, 255, 0.7),
                   rgba(0, 181, 255, 0.4),
                   rgba(255, 134, 0, 0.76)),
-  url(../img/code.jpg) no-repeat fixed center;
+                  url(../img/code.jpg) fixed no-repeat center;
+  z-index: -10;
   background-size: cover;
   clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100% );
+  border-radius: 20px;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
   padding-bottom: 20%;
-  z-index: 10;
   &__heading{
     text-transform: uppercase;
-    font-family: 'Permanent Marker', cursive;
     text-align: right;
-    opacity: 0.4;
+    opacity: 0.6;
     padding-left: 2rem;
     padding-top: 35vh;
     font-size: 4rem;
@@ -26,15 +27,19 @@
     padding-right: 3rem;
   }
   &__paragraph-box{
-    width: 100%;
+    width: fit-content;
+    background-color: #fdfdfd;
     @include flex-center(row, center);
     padding: 2rem 3rem;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
   }
   &__paragraph{
-    width: 500px;
+    max-width: 500px;
     font-size: 1.7rem;
     text-align: center;
-    color: white;
+    color: #222222;
   }
 
   &__tech-box{
@@ -49,7 +54,7 @@
     justify-self: center;
     transition: all 150ms;
     backface-visibility: hidden;
-    opacity: 0.5;
+    opacity: 0.8;
     @include flex-center(column, center);
     max-width: 270px;
     filter: grayscale(100%) drop-shadow( 0 1rem 1.5rem rgba(0, 0, 0, 0.3));
@@ -102,6 +107,12 @@
 
 @media only screen and (max-width: 601px) {
   .web{
+    background: linear-gradient(
+                    to bottom right,
+                    rgba(225, 245, 255, 0.9),
+                    rgba(0, 181, 255, 0.9),
+                    rgba(255, 134, 0, 0.9));
+
     &__tech-box{
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;

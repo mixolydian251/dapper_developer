@@ -28,8 +28,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build:prod
-
 # Copy everything from current local directory to current container directory
 
 

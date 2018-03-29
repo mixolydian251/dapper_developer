@@ -12,7 +12,7 @@ const sass = require('../img/Sass_Logo.svg');
 
 const WebDevelopment = () => (
     <div id="web_background" className="web">
-        <h3 className="web__heading">Web Development</h3>
+        <h3 className="web__heading"> </h3>
         <div className="web__paragraph-box">
             <p className="web__paragraph">
                 In the ever changing times of Javascript Land, there is certainly no shortage of awesome libraries
@@ -52,7 +52,7 @@ const WebDevelopment = () => (
                 <img className="web__tech--node" src={node}/>
             </div>
             <div className="web__tech">
-                <img className="web__tech--express" src={express}/>
+                <img className="web__tech--express" src={express}/>\
             </div>
         </div>
     </div>

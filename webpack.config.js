@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = (env) => {
     const isProduction = env === 'production';
     const CSSExtract = new ExtractTextPlugin('style.css');
-
+    console.log(env);
     return {
         entry: ['babel-polyfill', './src/app.js'],
         output: {
@@ -49,12 +49,12 @@ module.exports = (env) => {
             }]
         },
         plugins: [
-            new webpack.DefinePlugin({
-                'process.env': {
-                    'NODE_ENV': JSON.stringify('production')
-                }
-            }),
-            CSSExtract,
+          new webpack.DefinePlugin({
+             'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+              }
+          }),
+          CSSExtract,
         ],
         devtool: isProduction ? 'source-map' :'inline-source-map', // show my code in console when I run into an error instead of bundle.js
         devServer: {
