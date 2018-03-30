@@ -107,12 +107,11 @@
 
 @media only screen and (max-width: 601px) {
   .web{
-    background: linear-gradient(
-                    to bottom right,
-                    rgba(225, 245, 255, 0.9),
-                    rgba(0, 181, 255, 0.9),
-                    rgba(255, 134, 0, 0.9));
+    background: radial-gradient( #2d4761, #2b2f34);
 
+    &__paragraph-box{
+      margin: 2rem;
+    }
     &__tech-box{
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
@@ -150,6 +149,8 @@
         width: 95px;
       }
       &--express {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
         width: 150px;
         margin-left: 125%;
         margin-top: -80px;

@@ -6,7 +6,7 @@ const Projects = () => (
         <h3 className="projects__heading">Side Projects</h3>
         <div id="project_background" className="projects__cards">
 
-            <div className="card">
+            <button className="card">
                 <div className="card__side card__side--front">
                     <div className="card__front--image card__front--image-trash"/>
                     <div className="card__front--title card__front--title-1">Chase's Adventure</div>
@@ -20,11 +20,11 @@ const Projects = () => (
                     </p>
                     <Link to="http://thedapperdeveloper.com:3000" target="_blank" className="btn-white card__button">Demo</Link>
                 </div>
-            </div>
+            </button>
 
 
 
-            <div className="card">
+            <button className="card">
               <div className="card__side card__side--front">
                 <div className="card__front--image card__front--image-harmony"/>
                 <div className="card__front--title card__front--title-2">Harmo-Knowledge</div>
@@ -38,11 +38,11 @@ const Projects = () => (
                 </p>
                 <Link to="http://thedapperdeveloper.com:3001" target="_blank" className="btn-white card__button">Demo</Link>
               </div>
-            </div>
+            </button>
 
 
 
-            <div className="card">
+            <button className="card">
                 <div className="card__side card__side--front">
                     <div className="card__front--image card__front--image-brooks_website"/>
                     <div className="card__front--title card__front--title-3">Brooks Website</div>
@@ -57,10 +57,10 @@ const Projects = () => (
                     </p>
                     <a href="http://brooksavenuechurch.com" target="_blank" className="btn-white card__button">Demo</a>
                 </div>
-            </div>
+            </button>
 
 
-            <div className="card">
+            <button className="card">
                 <div className="card__side card__side--front">
                     <div className="card__front--image card__front--image-brooks_search"/>
                     <div className="card__front--title card__front--title-3">Brooks Search</div>
@@ -76,9 +76,9 @@ const Projects = () => (
                   </p>
                   <Link to="http://thedapperdeveloper.com:3002" target="_blank" className="btn-white card__button">Demo</Link>
                 </div>
-            </div>
+            </button>
 
-            <div className="card">
+            <button className="card">
                 <div className="card__side card__side--front">
                     <div className="card__front--image card__front--image-you_pick"/>
                     <div className="card__front--title card__front--title-1">Charles Keith</div>
@@ -89,10 +89,10 @@ const Projects = () => (
                     This website features and hand built Content Management System</p>
                   <Link to="http://thedapperdeveloper.com:3004" target="_blank" className="btn-white card__button">Demo</Link>
                 </div>
-            </div>
+            </button>
 
 
-            <div className="card">
+            <button className="card">
               <div className="card__side card__side--front">
                 <div className="card__front--image card__front--image-run"/>
                 <div className="card__front--title card__front--title-2">Run App</div>
@@ -106,7 +106,7 @@ const Projects = () => (
                 </p>
                 <Link to="http://thedapperdeveloper.com:3005" target="_blank" className="btn-white card__button">Demo</Link>
               </div>
-            </div>
+            </button>
 
             </div>
         </div>

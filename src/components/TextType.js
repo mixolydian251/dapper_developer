@@ -6,7 +6,7 @@ class TextType extends React.Component {
     startDelay: 1500,
     timeVariation: 90,
     textIndex: 0,
-    text: ["Where design meets performance!", "Let's build you dream website!",
+    text: ["Where design meets performance!", "Let's build your dream website!",
       "Check out my code on Github!", "HTML5, CSS3, Javascript, React & More!"],
     textState: ''
   };
