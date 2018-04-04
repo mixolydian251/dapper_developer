@@ -15,12 +15,16 @@ class TextType extends React.Component {
     let time = this.state.startDelay;
     this.state.text[this.state.textIndex].split('').forEach( (letter, i) => {
       time += Math.ceil(Math.random() * this.state.timeVariation) + this.state.timeVariation;
+
       setTimeout(() => {
-        this.setState((prevState)  => ({textState: prevState.textState + letter}));
+        window.requestAnimationFrame(() => {
+          this.setState((prevState) => ({textState: prevState.textState + letter}));
+        });
+
         if (i === this.state.text[this.state.textIndex].length - 1){
           setTimeout(() => {this.startBackspace()}, 2000)
         }
-      }, time)
+      }, time);
     })
   };
 
@@ -39,8 +43,12 @@ class TextType extends React.Component {
       let time = 0;
       for (let i = this.state.textState.length; i >= 0; i--) {
         time += 50;
+
         setTimeout(() => {
-          this.setState({textState: this.state.textState.split('').splice(0,i).join('')});
+          window.requestAnimationFrame(() => {
+            this.setState({textState: this.state.textState.split('').splice(0, i).join('')});
+          });
+
           if (i === 0) {resolve("Promise Resolved!")}
         }, time);
       }
