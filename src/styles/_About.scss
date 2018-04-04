@@ -1,15 +1,14 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-.about{
+.about {
   width: 100%;
   grid-area: background;
   @include flex-center(column, space-evenly);
   //align-items: flex-start;
   margin: 2rem 0;
 
-
-  &__heading{
+  &__heading {
     padding-left: 4rem;
     width: 100vw;
     font-family: Futura, Avenir, sans-serif;
@@ -18,7 +17,7 @@
     font-size: 4rem;
     opacity: 0.4;
   }
-  &__paragraph{
+  &__paragraph {
     width: 100vw;
     font-size: 1.7rem;
     padding: 4rem;
@@ -26,7 +25,4 @@
 }
 
 @media only screen and (max-width: 601px) {
-
-
-
 }

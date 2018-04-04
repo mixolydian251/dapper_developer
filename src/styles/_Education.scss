@@ -1,6 +1,6 @@
-@import "abstracts/mixins";
+@import 'abstracts/mixins';
 
-.education{
+.education {
   grid-area: student;
   @include flex-center(column, flex-start);
   position: relative;
@@ -8,11 +8,11 @@
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
     url(../img/school.jpg) no-repeat left;
   background-size: cover;
-  clip-path: polygon(0 25vh, 100% 0, 100vw calc(100% - 25vh), 0 100% );
+  clip-path: polygon(0 25vh, 100% 0, 100vw calc(100% - 25vh), 0 100%);
   margin-top: -18rem;
   z-index: 1;
 
-  &__heading{
+  &__heading {
     width: 100%;
     font-family: 'Permanent Marker', cursive;
     text-align: left;
@@ -25,13 +25,13 @@
   }
 }
 
-.school{
+.school {
   width: 100%;
   max-width: 1440px;
   min-width: 730px;
   position: relative;
 
-  &__title{
+  &__title {
     font-family: 'Permanent Marker', cursive;
     font-weight: 800;
     color: rgba(51, 51, 51, 0.8);
@@ -39,14 +39,14 @@
     font-size: 2.6rem;
   }
 
-  &__content{
+  &__content {
     font-family: 'Permanent Marker', cursive;
     font-weight: 300;
     color: rgba(51, 51, 51, 0.8);
     padding: 1rem 2rem;
     font-size: 1.8rem;
     position: relative;
-    &--image{
+    &--image {
       border-radius: 50%;
       height: 75px;
       width: 75px;
@@ -56,80 +56,79 @@
     }
   }
 
-  &__card{
+  &__card {
     min-height: 385px;
     max-height: 420px;
     height: 45vh;
     width: 35%;
     min-width: 280px;
-    box-shadow: 0 1.5rem 4rem rgba(black, .4);
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
     border-radius: 0;
     position: absolute;
     z-index: 5;
     transition: all 300ms;
 
-    &--high-school{
-      background: linear-gradient( to left, rgba(165, 220, 255, 0.3), rgba(0, 171, 255, 0.3)),
-      url(../img/paper.jpg) bottom;
+    &--high-school {
+      background: linear-gradient(to left, rgba(165, 220, 255, 0.3), rgba(0, 171, 255, 0.3)),
+        url(../img/paper.jpg) bottom;
       background-size: contain;
       left: 20%;
       top: 2rem;
       border-radius: 2px 5px 10px 20px;
     }
-    &--associates{
-      background: linear-gradient( to bottom right, rgba(46, 255, 0, 0.3), rgba(175, 255, 172, 0.3)),
-      url(../img/paper.jpg);
+    &--associates {
+      background: linear-gradient(to bottom right, rgba(46, 255, 0, 0.3), rgba(175, 255, 172, 0.3)),
+        url(../img/paper.jpg);
       right: 20%;
       top: 6rem;
       border-radius: 5px 10px 20px 2px;
     }
-    &--bachelors{
-      background: linear-gradient( to bottom right, rgba(250, 255, 172, 0.3), rgba(255, 244, 0, 0.3)),
-      url(../img/paper.jpg);
+    &--bachelors {
+      background: linear-gradient(to bottom right, rgba(250, 255, 172, 0.3), rgba(255, 244, 0, 0.3)),
+        url(../img/paper.jpg);
       background-size: cover;
       left: 32%;
       top: 12rem;
       border-radius: 10px 20px 2px 5px;
     }
-    &:hover{
+    &:hover {
       transform: scale(1.05) translateY(5px);
-      box-shadow: 0 2.5rem 4rem rgba(black, .5);
+      box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
       z-index: 10;
     }
   }
-  &:hover &__card:not(:hover){
+  &:hover &__card:not(:hover) {
     transform: scale(0.95);
     opacity: 0.9;
   }
 }
 
 @media only screen and (max-width: 601px) {
-
-  .education{
+  .education {
     height: 100rem;
     margin-top: -18rem;
-    &__heading{
+    &__heading {
       margin-top: 20rem;
     }
   }
 
-  .school{
+  .school {
     min-width: 0;
-    &__card{
+    &__card {
       min-height: 0;
       height: 350px;
       width: 230px;
       min-width: 200px;
 
-      &--high-school{
+      &--high-school {
         left: 29%;
         top: 2rem;
       }
-      &--associates{
+      &--associates {
         right: 29%;
         top: 8rem;
       }
-      &--bachelors{
+      &--bachelors {
         left: 33%;
         top: 14rem;
       }

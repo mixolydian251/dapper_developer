@@ -1,7 +1,7 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-.projects{
+.projects {
   width: 100%;
   padding-top: 10rem;
   padding-bottom: 5rem;
@@ -9,7 +9,7 @@
   grid-area: projects;
   z-index: 7;
 
-  &__heading{
+  &__heading {
     font-family: Futura, Avenir, sans-serif;
     text-align: right;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
     margin-bottom: 2rem;
     padding-right: 2rem;
   }
-  &__cards{
+  &__cards {
     padding: 2rem;
     width: 100%;
     display: grid;
@@ -30,7 +30,7 @@
   }
 }
 
-.card{
+.card {
   background: transparent;
   border: none;
   justify-self: center;
@@ -40,8 +40,7 @@
   height: 400px;
   width: 290px;
 
-
-  &__side{
+  &__side {
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
@@ -54,14 +53,37 @@
     backface-visibility: hidden;
     box-shadow: 1rem 1.5rem 4rem rgba(black, 0.35);
 
-
-    &--front{
-      background: radial-gradient(circle at 25% 75%, #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff, #fcfcfc,
-              #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff, #fcfcfc,
-              #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff, #fcfcfc, #ffffff, #fcfcfc);
+    &--front {
+      background: radial-gradient(
+        circle at 25% 75%,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc,
+        #ffffff,
+        #fcfcfc
+      );
     }
 
-    &--back{
+    &--back {
       position: relative;
       color: white;
       font-size: 1.6rem;
@@ -69,88 +91,83 @@
       text-align: left;
       transform: rotateY(180deg);
 
-
-      &-1{
-
-        background-image: linear-gradient(to bottom right, rgba(255, 188, 0, 0.7), rgba(255, 96, 15, 0.7));
+      &-1 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(255, 188, 0, 0.7),
+          rgba(255, 96, 15, 0.7)
+        );
       }
 
-      &-2{
-        background-image: linear-gradient(to bottom right, rgba(22, 147, 255, 0.8), rgba(42, 25, 250, 0.8));
+      &-2 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(22, 147, 255, 0.8),
+          rgba(42, 25, 250, 0.8)
+        );
       }
 
-      &-3{
-        background-image: linear-gradient(to bottom right, rgba(93, 213, 74, 0.8), rgba(3, 180, 123, 0.8));
+      &-3 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(93, 213, 74, 0.8),
+          rgba(3, 180, 123, 0.8)
+        );
       }
     }
   }
 
-  &:focus, &:active{
+  &:focus,
+  &:active {
     outline: none;
     -webkit-tap-highlight-color: transparent;
   }
 
-  &:hover &__side--front, &:focus &__side--front {
-    transform :rotateY(-180deg);
+  &:hover &__side--front,
+  &:focus &__side--front {
+    transform: rotateY(-180deg);
   }
 
-  &:hover &__side--back, &:focus &__side--back {
-    transform :rotateY(0);
+  &:hover &__side--back,
+  &:focus &__side--back {
+    transform: rotateY(0);
   }
 }
 
-.card__front--image{
+.card__front--image {
   position: relative;
   background-blend-mode: screen;
   height: 40%;
   width: 100%;
   background-size: contain;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100% );
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   border-radius: 8px 8px 0 0;
-  &-trash{
-    background: linear-gradient(
-                    to bottom right,
-                    $yellow,
-                    $orange),
-    url(../img/trash_adventure.jpg) no-repeat center;
+  &-trash {
+    background: linear-gradient(to bottom right, $yellow, $orange),
+      url(../img/trash_adventure.jpg) no-repeat center;
   }
-  &-run{
-    background: linear-gradient(
-                    to bottom right,
-                    $light_blue,
-                    $dark_blue),
-    url(../img/run_app.jpg) no-repeat center;
+  &-run {
+    background: linear-gradient(to bottom right, $light_blue, $dark_blue),
+      url(../img/run_app.jpg) no-repeat center;
   }
-  &-brooks_website{
-    background: linear-gradient(
-                    to bottom right,
-                    $light_green,
-                    $dark_green),
-    url(../img/brooks_website.jpg) no-repeat center;
+  &-brooks_website {
+    background: linear-gradient(to bottom right, $light_green, $dark_green),
+      url(../img/brooks_website.jpg) no-repeat center;
   }
-  &-brooks_search{
-    background: linear-gradient(
-                    to bottom right,
-                    $light_green,
-                    $dark_green),
-    url(../img/brooks_sign_in.jpg) no-repeat center;
+  &-brooks_search {
+    background: linear-gradient(to bottom right, $light_green, $dark_green),
+      url(../img/brooks_sign_in.jpg) no-repeat center;
   }
-  &-you_pick{
-    background: linear-gradient(
-                    to bottom right,
-                    $yellow,
-                    $orange),
-    url(../img/charles_keith.jpg) no-repeat center;
+  &-you_pick {
+    background: linear-gradient(to bottom right, $yellow, $orange),
+      url(../img/charles_keith.jpg) no-repeat center;
   }
-  &-harmony{
-    background: linear-gradient(
-                    to bottom right,
-                    $light_blue,
-                    $dark_blue),
-    url(../img/music.png) no-repeat center;
+  &-harmony {
+    background: linear-gradient(to bottom right, $light_blue, $dark_blue),
+      url(../img/music.png) no-repeat center;
   }
 }
-.card__front--title{
+.card__front--title {
   color: white;
   position: absolute;
   font-size: 2.8rem;
@@ -160,27 +177,24 @@
   opacity: 0.9;
   padding: 0.5rem 1rem;
   box-decoration-break: clone;
-  &-1{
+  &-1 {
     background-image: linear-gradient(to right, $yellow, $orange);
   }
 
-  &-2{
+  &-2 {
     background-image: linear-gradient(to right, $light_blue, $purple);
   }
 
-  &-3{
+  &-3 {
     background-image: linear-gradient(to right, $light_green, $dark_green);
   }
-
-
 }
-.card__front--description{
+.card__front--description {
   margin-top: 20%;
   padding: 1rem;
-
 }
 
-.card__button{
+.card__button {
   width: 12rem;
   display: flex;
   justify-content: center;
@@ -195,8 +209,6 @@
   text-decoration: none;
 }
 
-
-
 @media only screen and (max-width: 950px) {
   .projects {
     //height: 1800px;
@@ -206,7 +218,6 @@
   }
 }
 
-
 @media only screen and (max-width: 601px) {
   .projects {
     &__cards {
@@ -214,15 +225,14 @@
       grid-template-columns: 1fr;
     }
   }
-  .card__front--description{
+  .card__front--description {
     font-size: 2rem;
-
   }
-  .card{
+  .card {
     width: 90vw;
     max-width: 330px;
-    &__side{
-      &--back{
+    &__side {
+      &--back {
         font-size: 2.2rem;
       }
     }

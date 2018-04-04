@@ -1,4 +1,4 @@
-.textType{
+.textType {
   background: transparent;
   color: white;
   width: fit-content;
@@ -11,7 +11,7 @@
   font-weight: 100;
   font-family: Avenir, Helvetica, sans-serif;
 
-  &__cursor{
+  &__cursor {
     width: fit-content;
     padding-bottom: 5px;
     padding-left: 1px;
@@ -23,9 +23,9 @@
 }
 
 @media only screen and (max-width: 601px) {
-  .textType{
+  .textType {
     font-size: 20px;
-    &__cursor{
+    &__cursor {
       font-size: 25px;
     }
   }
@@ -35,7 +35,7 @@
   0% {
     opacity: 0;
   }
-  50%{
+  50% {
     opacity: 0;
   }
   100% {

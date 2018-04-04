@@ -1,24 +1,23 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-
-.page__layout{
+.page__layout {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   grid-template-areas:
-          'background'
-          'pictures'
-          'web'
-          'student'
-          'projects';
+    'background'
+    'pictures'
+    'web'
+    'student'
+    'projects';
 }
-.page__container{
+.page__container {
   background-color: #f9f9f9;
   //margin-top: -55vh;
   @include flex-center(column, flex-start);
 }
 
-.blank_space{
+.blank_space {
   padding-top: 25vh;
 }
