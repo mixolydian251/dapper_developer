@@ -9,7 +9,7 @@
       rgba(0, 181, 255, 0.5),
       rgba(255, 134, 0, 0.76)
     ),
-    url(../img/hustle.jpg) fixed no-repeat 70%;
+    url("https://i.imgur.com/0LcJNQn.jpg") fixed no-repeat 70%;
   background-size: cover;
   z-index: -10;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25vh), 0 100%);
@@ -59,6 +59,8 @@
         animation-timing-function: ease;
         backface-visibility: hidden;
       }
+
+
     }
   }
 }

@@ -54,33 +54,7 @@
     box-shadow: 1rem 1.5rem 4rem rgba(black, 0.35);
 
     &--front {
-      background: radial-gradient(
-        circle at 25% 75%,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc,
-        #ffffff,
-        #fcfcfc
-      );
+      background: white;
     }
 
     &--back {
@@ -144,27 +118,27 @@
   border-radius: 8px 8px 0 0;
   &-trash {
     background: linear-gradient(to bottom right, $yellow, $orange),
-      url(../img/trash_adventure.jpg) no-repeat center;
+      url("https://i.imgur.com/LCneP3C.jpg") no-repeat center;
   }
   &-run {
     background: linear-gradient(to bottom right, $light_blue, $dark_blue),
-      url(../img/run_app.jpg) no-repeat center;
+      url("https://i.imgur.com/0rThcD5.jpg") no-repeat center;
   }
   &-brooks_website {
     background: linear-gradient(to bottom right, $light_green, $dark_green),
-      url(../img/brooks_website.jpg) no-repeat center;
+      url("https://i.imgur.com/Q09zIIJ.jpg") no-repeat center;
   }
   &-brooks_search {
     background: linear-gradient(to bottom right, $light_green, $dark_green),
-      url(../img/brooks_sign_in.jpg) no-repeat center;
+      url("https://i.imgur.com/q9NeKwZ.jpg") no-repeat center;
   }
   &-you_pick {
     background: linear-gradient(to bottom right, $yellow, $orange),
-      url(../img/charles_keith.jpg) no-repeat center;
+      url("https://i.imgur.com/9IBvMoY.jpg") no-repeat center;
   }
   &-harmony {
     background: linear-gradient(to bottom right, $light_blue, $dark_blue),
-      url(../img/music.png) no-repeat center;
+      url("https://i.imgur.com/uqsw5AG.png") no-repeat center;
   }
 }
 .card__front--title {
@@ -195,6 +169,8 @@
 }
 
 .card__button {
+  background: white;
+  color: #222222;
   width: 12rem;
   display: flex;
   justify-content: center;
@@ -206,6 +182,7 @@
   right: 0;
   left: 0;
   border-radius: 100px;
+  padding: 15px 5px;
   text-decoration: none;
 }
 

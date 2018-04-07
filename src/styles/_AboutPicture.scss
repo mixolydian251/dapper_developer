@@ -11,11 +11,7 @@
     position: absolute;
     right: 2%;
     bottom: -17rem;
-    filter: drop-shadow(0.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5));
-    -webkit-filter: drop-shadow(0.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5));
     &:hover {
-      filter: drop-shadow(1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
-      -webkit-filter: drop-shadow(1.5rem 2.5rem 1.5rem rgba(0, 0, 0, 0.6));
       transform: translateY(-10px);
     }
   }

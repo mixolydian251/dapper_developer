@@ -22,36 +22,31 @@ const WebDevelopment = () => (
 
     <div className="web__tech-box">
       <div className="web__tech">
-        <h3 className="web__tech--title">Javascript</h3>
-        <img className="web__tech--javascript" src={javascript} />
+        <img className="web__tech--javascript" src={javascript} alt="Javascript" />
       </div>
       <div className="web__tech">
-        <h3 className="web__tech--title">Sass</h3>
-        <img className="web__tech--sass" src={sass} />
+        <img className="web__tech--sass" src={sass} alt="Sass/CSS" />
       </div>
       <div className="web__tech">
-        <h3 className="web__tech--title">React</h3>
-        <img className="web__tech--react" src={react} />
+        <img className="web__tech--react" src={react} alt="React" />
       </div>
       <div className="web__tech">
-        <h3 className="web__tech--title">Redux</h3>
-        <img className="web__tech--redux" src={redux} />
+        <img className="web__tech--redux" src={redux} alt="Redux" />
       </div>
       <div className="web__tech">
-        <h3 className="web__tech--title">Firebase</h3>
-        <img className="web__tech--firebase" src={firebase} />
+        <img className="web__tech--firebase" src={firebase} alt="Firebase" />
       </div>
       <div className="web__tech">
-        <img className="web__tech--mongo" src={mongo} />
+        <img className="web__tech--mongo" src={mongo} alt="MongoDB"/>
       </div>
       <div className="web__tech">
-        <img className="web__tech--docker" src={docker} />
+        <img className="web__tech--docker" src={docker} alt="Docker" />
       </div>
       <div className="web__tech">
-        <img className="web__tech--node" src={node} />
+        <img className="web__tech--node" src={node} alt="Node.js" />
       </div>
       <div className="web__tech">
-        <img className="web__tech--express" src={express} />\
+        <img className="web__tech--express" src={express} alt="Express.js" />
       </div>
     </div>
   </div>

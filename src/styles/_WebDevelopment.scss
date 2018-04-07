@@ -10,7 +10,7 @@
       rgba(0, 181, 255, 0.4),
       rgba(255, 134, 0, 0.76)
     ),
-    url(../img/code.jpg) fixed no-repeat center;
+    url("https://i.imgur.com/n2t1wQd.jpg") fixed no-repeat center;
   z-index: -10;
   background-size: cover;
   clip-path: polygon(0 25vh, 100% 0, 100% calc(100% - 25vh), 0 100%);
@@ -48,58 +48,57 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(200px, auto);
     padding: 0 3rem;
+    margin-top: 85px;
     grid-gap: 3rem;
   }
 
   &__tech {
     justify-self: center;
     transition: all 150ms;
-    backface-visibility: hidden;
-    opacity: 0.8;
+    background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     @include flex-center(column, center);
-    max-width: 270px;
-    filter: grayscale(100%) drop-shadow(0 1rem 1.5rem rgba(0, 0, 0, 0.3));
-    -webkit-filter: grayscale(100%) drop-shadow(0 1rem 1.5rem rgba(0, 0, 0, 0.3));
     &--title {
       font-size: 1.8em;
       font-weight: 100;
       color: white;
     }
     &--javascript {
-      padding-top: 5px;
-      width: 65%;
+      width: 100px;
+      height: 100px;
     }
     &--sass {
-      padding-top: 5px;
-      width: 65%;
+      width: 100px;
+      height: 100px;
     }
     &--react {
-      padding-top: 5px;
-      width: 65%;
+      width: 100px;
+      height: 100px;
     }
     &--redux {
-      padding-top: 5px;
-      width: 40%;
+      width: 100px;
+      height: 100px;
     }
     &--firebase {
-      padding-top: 5px;
-      width: 30%;
+      width: 100px;
+      height: 100px;
     }
     &--mongo {
-      width: 75%;
+      width: 130px;
     }
     &--docker {
-      width: 45%;
+      width: 100px;
+      height: 100px;
     }
     &--node {
-      width: 50%;
+      width: 120px;
     }
     &--express {
-      width: 65%;
+      width: 120px;
     }
     &:hover {
-      filter: grayscale(0%) drop-shadow(0 2rem 1.8rem rgba(0, 0, 0, 0.5));
-      -webkit-filter: grayscale(0%) drop-shadow(0 2rem 1.8rem rgba(0, 0, 0, 0.5));
       opacity: 1;
       transform: translateY(-7px);
     }
@@ -119,41 +118,45 @@
     }
 
     &__tech {
+      width: 120px;
+      height: 120px;
       &--javascript {
         padding-top: 5px;
         width: 80px;
+        height: 80px;
       }
       &--sass {
         padding-top: 5px;
         width: 80px;
+        height: 80px;
       }
       &--react {
         padding-top: 5px;
         width: 80px;
+        height: 80px;
       }
       &--redux {
         padding-top: 5px;
         width: 80px;
+        height: 80px;
       }
       &--firebase {
         padding-top: 5px;
-        width: 70px;
+        width: 80px;
+        height: 80px;
       }
       &--mongo {
-        width: 140px;
+        width: 110px;
       }
       &--docker {
-        width: 90px;
+        width: 80px;
+        height: 80px;
       }
       &--node {
-        width: 95px;
+        width: 100px;
       }
       &--express {
-        filter: invert(100%);
-        -webkit-filter: invert(100%);
-        width: 150px;
-        margin-left: 125%;
-        margin-top: -80px;
+        width: 100px;
       }
     }
   }

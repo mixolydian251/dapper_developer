@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Projects = () => (
   <div className="projects">
@@ -21,13 +20,13 @@ const Projects = () => (
             move (or tap the corresponding side on mobile). See how many goodies you can collect,
             while dodging the the bad stuff!
           </p>
-          <Link
-            to="http://thedapperdeveloper.com:3000"
+          <a
+            href="http://thedapperdeveloper.com:3000"
             target="_blank"
             className="btn-white card__button"
           >
             Demo
-          </Link>
+          </a>
         </div>
       </button>
 
@@ -46,13 +45,13 @@ const Projects = () => (
             from 2 modes, chords and notes. Then enter a guess and check your answer. From the menu,
             you can target specific chords. You'll be a maestro in no time!
           </p>
-          <Link
-            to="http://thedapperdeveloper.com:3001"
+          <a
+            href="http://thedapperdeveloper.com:3001"
             target="_blank"
             className="btn-white card__button"
           >
             Demo
-          </Link>
+          </a>
         </div>
       </button>
 
@@ -98,13 +97,13 @@ const Projects = () => (
             firebase db. Users can track how many times customers have visited the clothing closet,
             as well as keep track of how many limited items they take.
           </p>
-          <Link
-            to="http://thedapperdeveloper.com:3002"
+          <a
+            href="http://thedapperdeveloper.com:3002"
             target="_blank"
             className="btn-white card__button"
           >
             Demo
-          </Link>
+          </a>
         </div>
       </button>
 
@@ -119,13 +118,13 @@ const Projects = () => (
         </div>
         <div className="card__side card__side--back card__side--back-1">
           <p>This website features and hand built Content Management System</p>
-          <Link
-            to="http://thedapperdeveloper.com:3004"
+          <a
+            href="http://thedapperdeveloper.com:3004"
             target="_blank"
             className="btn-white card__button"
           >
             Demo
-          </Link>
+          </a>
         </div>
       </button>
 
@@ -145,13 +144,13 @@ const Projects = () => (
             you have finished, upload your run to the cloud and compare your progress with previous
             runs.
           </p>
-          <Link
-            to="http://thedapperdeveloper.com:3005"
+          <a
+            href="http://thedapperdeveloper.com:3005"
             target="_blank"
-            className="btn-white card__button"
+            className="card__button"
           >
             Demo
-          </Link>
+          </a>
         </div>
       </button>
     </div>
