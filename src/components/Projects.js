@@ -117,7 +117,10 @@ const Projects = () => (
           </div>
         </div>
         <div className="card__side card__side--back card__side--back-1">
-          <p>This website features and hand built Content Management System</p>
+          <p>This sight is a personal portfolio and information site for Charles Keith.
+              The site features a custom system focused around draftJS and Firebase to
+              provide real-time content management.
+          </p>
           <a
             href="http://thedapperdeveloper.com:3004"
             target="_blank"

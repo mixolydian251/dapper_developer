@@ -53,17 +53,20 @@
   }
 
   &__tech {
+    position: relative;
     justify-self: center;
     transition: all 150ms;
-    background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+    background: radial-gradient(circle at 25% 25%, #ffffff, #e1e1e1);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     @include flex-center(column, center);
-    &--title {
+    &--text {
       font-size: 1.8em;
       font-weight: 100;
       color: white;
+      position: absolute;
+      bottom: -30px; left: auto; right: auto;
     }
     &--javascript {
       width: 100px;
@@ -86,7 +89,7 @@
       height: 100px;
     }
     &--mongo {
-      width: 130px;
+      width: 140px;
     }
     &--docker {
       width: 100px;
